@@ -12,7 +12,6 @@ npm install pugit --save
 ```
 
 ## Usage
-Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 A full HTML body example.                   
 ```
