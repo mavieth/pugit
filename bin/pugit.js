@@ -124,7 +124,6 @@ var getFileName = function() {
     return path.resolve(options.src[0])
 }
 var getFileContent = function() {
-
     fullFilePath = getFileName();
     if (fs.existsSync(fullFilePath)) {
         var readStream = fs.createReadStream(fullFilePath, 'utf8');
@@ -153,8 +152,8 @@ var createPug = function(html) {
         noemptypipe: true
     };
 
-    if (options.full) {
-        pugOptions.bodyless = options.full;
+    if (options.bodyless) {
+        pugOptions.bodyless = options.bodyless;
     };
     if (options.spaces) {
         pugOptions.nspaces = options.spaces;
@@ -179,9 +178,6 @@ function ensureDirectoryExistence(filePath) {
 
 var saveNewPugFile = function(data) {
     fullFilePath = getFileName();
-
-
-
     var newFileNamePath = path.dirname(fullFilePath)
     if (options.output) {
         saveFileName = path.resolve(options.output);
