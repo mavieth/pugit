@@ -10,11 +10,11 @@
     "colors": "^1.1.2",
     "command-line-args": "^4.0.2",
     "command-line-usage": "^4.0.0",
-    "html2jade": "^0.8.6",
-    "shelljs": "^0.7.7"
+    "html2jade": "^0.8.6"
   },
   "devDependencies": {
-    "create-readme": "^1.1.0"
+    "create-readme": "^1.1.0",
+    "shelljs": "^0.7.7"
   },
   "scripts": {
     "test": "pugit ./tests/test.html -o newfolder/test.pug"

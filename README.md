@@ -11,9 +11,33 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 npm install pugit --save
 ```
 
-This package is provided in these module formats:
+## Usage
+Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
-- CommonJS
+A full HTML body example.                   
+```
+pugit test.html
+```
+
+Bodyless (no html or head tags) output.                       
+```
+pugit test.html --bodyless
+```
+
+Bodyless with 4 spaces instead of 2.   
+```
+pugit test.html --bodyless --spaces 4
+```
+
+New output filename.                   
+```
+pugit test.html --output newoutput.html
+```
+
+New output filename in a new directory.                   
+```
+pugit test.html --output newdirectory/newoutput.html
+```
 
 ## Dependencies
 
