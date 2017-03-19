@@ -1,7 +1,27 @@
-[![view on npm](http://img.shields.io/npm/v/command-line-usage.svg)](https://www.npmjs.org/package/command-line-usage)
-[![npm module downloads](http://img.shields.io/npm/dt/command-line-usage.svg)](https://www.npmjs.org/package/command-line-usage)
-[![Build Status](https://travis-ci.org/75lb/command-line-usage.svg?branch=master)](https://travis-ci.org/75lb/command-line-usage)
-[![Dependency Status](https://david-dm.org/75lb/command-line-usage.svg)](https://david-dm.org/75lb/command-line-usage)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+# pugit@1.0.0
+ [![npm version](https://badge.fury.io/js/pugit.svg)](https://npmjs.org/package/pugit)  [![build status](https://travis-ci.org/mavieth/pugit.svg)](https://travis-ci.org/mavieth/pugit)  [![coverage status](https://coveralls.io/repos/mavieth/pugit/badge.svg)](https://coveralls.io/github/mavieth/pugit)  [![dependency status](https://david-dm.org/mavieth/pugit.svg?theme=shields.io)](https://david-dm.org/mavieth/pugit)  [![devDependency status](https://david-dm.org/mavieth/pugit/dev-status.svg)](https://david-dm.org/mavieth/pugit#info=devDependencies)  [![Gitter](https://badges.gitter.im/mavieth/pugit.svg)](https://gitter.im/mavieth/pugit) 
 
-# pugit
+Command line tool to generate .pug files from html
+
+
+## Installation
+Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
+
+```sh
+npm install pugit --save
+```
+
+This package is provided in these module formats:
+
+- CommonJS
+
+## Dependencies
+
+- [colors](https://github.com/Marak/colors.js): get colors in your node.js console
+- [command-line-args](https://github.com/75lb/command-line-args): A mature, feature-complete library to parse command-line options.
+- [command-line-usage](https://github.com/75lb/command-line-usage): Generates command-line usage information
+- [html2jade](https://github.com/donpark/html2jade): HTML to Jade conversion tool
+- [shelljs](https://github.com/shelljs/shelljs): Portable Unix shell commands for Node.js
+
+## License
+[ISC]()
