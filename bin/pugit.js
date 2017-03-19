@@ -88,7 +88,7 @@ const sections = [{
             name: 'bodyless',
             alias: 'b',
             type: Boolean,
-            multiple: true,
+            multiple: false,
             defaultOption: optionDefinitions[4].defaultOption,
             description: 'Include HTML header in the pug output. Default: false.'
         }, {
@@ -98,7 +98,6 @@ const sections = [{
             multiple: false,
             description: 'Hide console output.'
         },
-
         {
             name: 'help',
             alias: 'h',
@@ -140,28 +139,31 @@ var getFileContent = function() {
 }
 
 var createPug = function(html) {
+
     var pugFileData;
     var pugOptions = {
         double: true,
-        numeric: false,
-        scalate: false,
+        numeric: true,
+        scalate: true,
         nspaces: 2,
-        tabs: false,
-        donotencode: false,
-        bodyless: false,
+        tabs: true,
+        donotencode: true,
+        bodyless: true,
         noemptypipe: true
     };
 
     if (options.bodyless) {
-        pugOptions.bodyless = options.bodyless;
+        pugOptions.bodyless = true;
     };
+
     if (options.spaces) {
         pugOptions.nspaces = options.spaces;
     };
 
     html2jade.convertHtml(html, pugOptions, function(err, pugData) {
-        pugFileData = pugData;
+        pugFileData = pugData.replace("| undefined","");
     });
+    
     saveNewPugFile(pugFileData);
 };
 
