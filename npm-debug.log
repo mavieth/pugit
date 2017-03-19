@@ -57,9 +57,9 @@
 21 silly publish   homepage: 'https://github.com/mavieth/pugit#readme',
 21 silly publish   readme: '# pugit@1.0.0\n [![npm version](https://badge.fury.io/js/pugit.svg)](https://npmjs.org/package/pugit)  [![build status](https://travis-ci.org/mavieth/pugit.svg)](https://travis-ci.org/mavieth/pugit)  [![coverage status](https://coveralls.io/repos/mavieth/pugit/badge.svg)](https://coveralls.io/github/mavieth/pugit)  [![dependency status](https://david-dm.org/mavieth/pugit.svg?theme=shields.io)](https://david-dm.org/mavieth/pugit)  [![devDependency status](https://david-dm.org/mavieth/pugit/dev-status.svg)](https://david-dm.org/mavieth/pugit#info=devDependencies)  [![Gitter](https://badges.gitter.im/mavieth/pugit.svg)](https://gitter.im/mavieth/pugit) \n\nCommand line tool to generate .pug files from html\n\n\n## Installation\nDownload node at [nodejs.org](http://nodejs.org) and install it, if you haven\'t already.\n\n```sh\nnpm install pugit --save\n```\n\nThis package is provided in these module formats:\n\n- CommonJS\n\n## Dependencies\n\n- [colors](https://github.com/Marak/colors.js): get colors in your node.js console\n- [command-line-args](https://github.com/75lb/command-line-args): A mature, feature-complete library to parse command-line options.\n- [command-line-usage](https://github.com/75lb/command-line-usage): Generates command-line usage information\n- [html2jade](https://github.com/donpark/html2jade): HTML to Jade conversion tool\n- [shelljs](https://github.com/shelljs/shelljs): Portable Unix shell commands for Node.js\n\n## License\n[ISC]()\n',
 21 silly publish   readmeFilename: 'README.md',
-21 silly publish   gitHead: 'f96328141f00c801f29b1ce91404bec3ed601ba7',
+21 silly publish   gitHead: '786962e194c31fd038638a3661f49d6a60eee200',
 21 silly publish   _id: 'pugit@1.0.0',
-21 silly publish   _shasum: '0365cf17b0a14abe25fe8add2b243c8c90601614',
+21 silly publish   _shasum: '3af31ab9d50eccb882c6c2444ad10f9f3eaee174',
 21 silly publish   _from: '.' }
 22 verbose getPublishConfig undefined
 23 silly mapToRegistry name pugit
@@ -78,22 +78,22 @@
 29 silly publish uploading /Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz
 30 verbose request uri https://registry.npmjs.org/pugit
 31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 12:09:50 AM
+32 info attempt registry request try #1 at 12:10:00 AM
 33 verbose request using bearer token for auth
-34 verbose request id 37a0a1dd92f44e49
+34 verbose request id 3c3856e16526a3ba
 35 http request PUT https://registry.npmjs.org/pugit
 36 http 403 https://registry.npmjs.org/pugit
 37 verbose headers { 'content-type': 'application/json',
 37 verbose headers   'cache-control': 'max-age=300',
 37 verbose headers   'content-length': '95',
 37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Sun, 19 Mar 2017 06:09:51 GMT',
+37 verbose headers   date: 'Sun, 19 Mar 2017 06:10:02 GMT',
 37 verbose headers   via: '1.1 varnish',
 37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-den6024-DEN',
+37 verbose headers   'x-served-by': 'cache-den6023-DEN',
 37 verbose headers   'x-cache': 'MISS',
 37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1489903790.380224,VS0,VE714',
+37 verbose headers   'x-timer': 'S1489903801.534148,VS0,VE717',
 37 verbose headers   vary: 'Accept-Encoding' }
 38 verbose request invalidating /Users/MichaelVieth/.npm/registry.npmjs.org/pugit on PUT
 39 error publish Failed PUT 403

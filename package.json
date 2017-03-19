@@ -17,7 +17,7 @@
     "create-readme": "^1.1.0"
   },
   "scripts": {
-    "test": "pugit ./tests/test.html -o tests/test.pug"
+    "test": "pugit ./tests/test.html -o newfolder/test.pug"
   },
   "repository": {
     "type": "git",
