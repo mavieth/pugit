@@ -1,0 +1,42 @@
+{
+  "name": "@pugit/pugit",
+  "version": "1.0.0",
+  "description": "Command line tool to generate .pug files from html",
+  "main": "./bin/pugit.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "command-line-args": "^4.0.2",
+    "command-line-usage": "^4.0.0",
+    "html2jade": "^0.8.6",
+    "progress-stream": "^1.2.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "pugit tests/test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavieth/pugit.git"
+  },
+  "keywords": [
+    "pug",
+    "htmlconverter",
+    "pugconverter",
+    "converter",
+    "html2jade",
+    "html2pug"
+  ],
+  "author": "Michael Vieth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavieth/pugit/issues"
+  },
+  "bin": {
+    "pugit": "./bin/pugit.js"
+  },
+  "homepage": "https://github.com/mavieth/pugit#readme"
+}
