@@ -1,6 +1,6 @@
 {
   "name": "pugit",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "Command line tool to generate .pug files from html",
   "main": "./bin/pugit.js",
   "directories": {
