@@ -11,6 +11,8 @@ const colors = require('colors');
 var fullFilePath;
 var data;
 var html;
+var saveFileName;
+var newFileNamePath;
 
 const optionDefinitions = [{
     name: 'src',
@@ -178,11 +180,18 @@ function ensureDirectoryExistence(filePath) {
 var saveNewPugFile = function(data) {
     fullFilePath = getFileName();
 
+
+
+    var newFileNamePath = path.dirname(fullFilePath)
     if (options.output) {
-        console.log(options.output);
-        var fullFilePath = path.dirname(fullFilePath) + options.output;
+        saveFileName = path.resolve(options.output);
+        fullFilePath = path.resolve(options.output,saveFileName);
+        newFileNamePath = path.resolve(saveFileName);
+        var directoryToCheck = path.dirname(newFileNamePath);
+        fullFilePath = newFileNamePath;
     } else {
-        fullFilePath = getFileName().replace(".html", ".pug");
+        saveFileName = path.basename(fullFilePath).replace(".html", ".pug");
+        var fullFilePath = path.resolve(path.dirname(fullFilePath),saveFileName);
     }
 
     ensureDirectoryExistence(fullFilePath);
