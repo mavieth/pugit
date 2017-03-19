@@ -1,5 +1,5 @@
 {
-  "name": "@pugit/pugit",
+  "name": "pugit",
   "version": "1.0.0",
   "description": "Command line tool to generate .pug files from html",
   "main": "./bin/pugit.js",
@@ -11,10 +11,11 @@
     "command-line-args": "^4.0.2",
     "command-line-usage": "^4.0.0",
     "html2jade": "^0.8.6",
-    "progress-stream": "^1.2.0",
-    "request": "^2.81.0"
+    "shelljs": "^0.7.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "create-readme": "^1.1.0"
+    },
   "scripts": {
     "test": "pugit tests/test.html"
   },

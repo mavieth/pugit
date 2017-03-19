@@ -5,8 +5,6 @@ const getUsage = require('command-line-usage');
 const html2jade = require('html2jade');
 const path = require('path');
 const fs = require('fs');
-const progress = require('progress-stream');
-const req = require('request');
 const colors = require('colors');
 
 // Globals
@@ -127,11 +125,6 @@ var getFileContent = function() {
 
     fullFilePath = getFileName();
     if (fs.existsSync(fullFilePath)) {
-        var stat = fs.statSync(fullFilePath);
-        var str = progress({
-            length: stat.size,
-            time: 1000
-        });
         var readStream = fs.createReadStream(fullFilePath, 'utf8');
         readStream.on('data', function(chunk) {
             data += chunk;
