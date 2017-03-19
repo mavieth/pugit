@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/MichaelVieth/.nvm/versions/node/v6.9.0/bin/node',
+1 verbose cli   '/Users/MichaelVieth/.nvm/versions/node/v6.9.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/MichaelVieth/dev/pugit',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/MichaelVieth/.npm correctMkdir not in flight; initializing
+10 info lifecycle pugit@1.0.0~prepublish: pugit@1.0.0
+11 silly lifecycle pugit@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/MichaelVieth/dev/pugit' ]
+13 verbose tarball /Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz
+14 verbose folder /Users/MichaelVieth/dev/pugit
+15 verbose addLocalTarball adding from inside cache /Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz
+16 verbose correctMkdir /Users/MichaelVieth/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd pugit@1.0.0
+18 verbose afterAdd /Users/MichaelVieth/.npm/pugit/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/MichaelVieth/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/MichaelVieth/.npm/pugit/1.0.0/package/package.json written
+21 silly publish { name: 'pugit',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Command line tool to generate .pug files from html',
+21 silly publish   main: './bin/pugit.js',
+21 silly publish   directories: { test: 'tests' },
+21 silly publish   dependencies:
+21 silly publish    { colors: '^1.1.2',
+21 silly publish      'command-line-args': '^4.0.2',
+21 silly publish      'command-line-usage': '^4.0.0',
+21 silly publish      html2jade: '^0.8.6',
+21 silly publish      shelljs: '^0.7.7' },
+21 silly publish   devDependencies: { 'create-readme': '^1.1.0' },
+21 silly publish   scripts: { test: 'pugit ./tests/test.html -o tests/test.pug' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/mavieth/pugit.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'pug',
+21 silly publish      'htmlconverter',
+21 silly publish      'pugconverter',
+21 silly publish      'converter',
+21 silly publish      'html2jade',
+21 silly publish      'html2pug' ],
+21 silly publish   author: { name: 'Michael Vieth' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/mavieth/pugit/issues' },
+21 silly publish   bin: { pugit: './bin/pugit.js' },
+21 silly publish   homepage: 'https://github.com/mavieth/pugit#readme',
+21 silly publish   readme: '# pugit@1.0.0\n [![npm version](https://badge.fury.io/js/pugit.svg)](https://npmjs.org/package/pugit)  [![build status](https://travis-ci.org/mavieth/pugit.svg)](https://travis-ci.org/mavieth/pugit)  [![coverage status](https://coveralls.io/repos/mavieth/pugit/badge.svg)](https://coveralls.io/github/mavieth/pugit)  [![dependency status](https://david-dm.org/mavieth/pugit.svg?theme=shields.io)](https://david-dm.org/mavieth/pugit)  [![devDependency status](https://david-dm.org/mavieth/pugit/dev-status.svg)](https://david-dm.org/mavieth/pugit#info=devDependencies)  [![Gitter](https://badges.gitter.im/mavieth/pugit.svg)](https://gitter.im/mavieth/pugit) \n\nCommand line tool to generate .pug files from html\n\n\n## Installation\nDownload node at [nodejs.org](http://nodejs.org) and install it, if you haven\'t already.\n\n```sh\nnpm install pugit --save\n```\n\nThis package is provided in these module formats:\n\n- CommonJS\n\n## Dependencies\n\n- [colors](https://github.com/Marak/colors.js): get colors in your node.js console\n- [command-line-args](https://github.com/75lb/command-line-args): A mature, feature-complete library to parse command-line options.\n- [command-line-usage](https://github.com/75lb/command-line-usage): Generates command-line usage information\n- [html2jade](https://github.com/donpark/html2jade): HTML to Jade conversion tool\n- [shelljs](https://github.com/shelljs/shelljs): Portable Unix shell commands for Node.js\n\n## License\n[ISC]()\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '29eb0abc21f48593b44ec557440080fe6ae123d7',
+21 silly publish   _id: 'pugit@1.0.0',
+21 silly publish   _shasum: '0365cf17b0a14abe25fe8add2b243c8c90601614',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name pugit
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'pugit',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'pugit',
+26 silly mapToRegistry   name: 'pugit',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/pugit
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/MichaelVieth/.npm/pugit/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/pugit
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:09:38 AM
+33 verbose request using bearer token for auth
+34 verbose request id 3599551b76f26bcd
+35 http request PUT https://registry.npmjs.org/pugit
+36 http 403 https://registry.npmjs.org/pugit
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 19 Mar 2017 06:09:38 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-den6023-DEN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1489903778.267372,VS0,VE723',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/MichaelVieth/.npm/registry.npmjs.org/pugit on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : pugit
+40 verbose stack     at makeError (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/MichaelVieth/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid pugit
+43 verbose cwd /Users/MichaelVieth/dev/pugit
+44 error Darwin 15.6.0
+45 error argv "/Users/MichaelVieth/.nvm/versions/node/v6.9.0/bin/node" "/Users/MichaelVieth/.nvm/versions/node/v6.9.0/bin/npm" "publish"
+46 error node v6.9.0
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : pugit
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

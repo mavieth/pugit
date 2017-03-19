@@ -1,6 +1,6 @@
 {
   "name": "pugit",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Command line tool to generate .pug files from html",
   "main": "./bin/pugit.js",
   "directories": {
@@ -17,8 +17,7 @@
     "create-readme": "^1.1.0"
   },
   "scripts": {
-    "test": "pugit ./tests/test.html -o tests/test.pug",
-    "publish": "node bin/publish.js"
+    "test": "pugit ./tests/test.html -o tests/test.pug"
   },
   "repository": {
     "type": "git",
